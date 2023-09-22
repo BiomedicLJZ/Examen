@@ -19,7 +19,7 @@ DoubleCell::DoubleCell(DoubleCell&&  other)
 
 
 // Destructor
-DoubleCell::~DoubleCell() = default;
+
 
 // Assignment operator by copy
 DoubleCell& DoubleCell::operator=(const DoubleCell& other){
@@ -30,12 +30,7 @@ DoubleCell& DoubleCell::operator=(const DoubleCell& other){
 }
 
 // Assignment operator by reference
-DoubleCell& DoubleCell::operator=(DoubleCell&& other){
-            if (this != &other){
-                Storedvalue = other.Storedvalue;
-            }
-            return *this;
-}
+
 
 // Assignment operator for double
 DoubleCell& DoubleCell::operator=(double value){
@@ -44,32 +39,34 @@ DoubleCell& DoubleCell::operator=(double value){
 }
 
 // Arithmetic operators
+//DoubleCell adding
 DoubleCell DoubleCell::operator +(const DoubleCell& other) const{
     return DoubleCell(Storedvalue + other.Storedvalue);
 }
-DoubleCell  DoubleCell::operator +(double value) const{
-    return DoubleCell(Storedvalue + value);
-}
+//primitive double adding
 
-DoubleCell DoubleCell::operator -(const DoubleCell& other) const{
-    return DoubleCell(Storedvalue - other.Storedvalue);
-}
+//DoubleCell substracting
+
+//primitive double substracting
 DoubleCell DoubleCell::operator -(double value) const{
     return DoubleCell(Storedvalue - value);
 }
 
+//DoubleCell multiplication
 DoubleCell DoubleCell::operator *(const DoubleCell& other) const{
     return DoubleCell(Storedvalue * other.Storedvalue);
 }
-DoubleCell DoubleCell::operator *(double value) const{
-    return DoubleCell(Storedvalue * value);
-}
+//primitive double multiplication
+
+//DoubleCell division
 DoubleCell DoubleCell::operator /(const DoubleCell& other) const{
     if(other.Storedvalue == 0){
         throw std::invalid_argument("Division by zero");
     }
     return DoubleCell(Storedvalue / other.Storedvalue);
 }
+
+//Primitive souble division 
 DoubleCell DoubleCell::operator /(double value) const{
     if(value == 0){
         throw std::invalid_argument("Division by zero");
@@ -83,6 +80,4 @@ void DoubleCell::SetValue(double value){
 }
 
 // Getters
-double DoubleCell::GetValue() const {
-            return Storedvalue;
-}
+
