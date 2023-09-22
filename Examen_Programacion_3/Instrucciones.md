@@ -6,7 +6,7 @@ Para la realización de este examen tendrán que Subir en `Classroom`un archivo 
 
 ### Creación de Clases
 
-En este repositorio de GitHub cuentan con los archivos `.h` y `.cpp` de una clase, estos archivos están incompletos ya que les hace falta una serie de lineas críticas para su funcionamiento, su trabajo en este examen será utilizando la documentación disponible, **apuntes y conocimientos previos**
+En este repositorio de GitHub cuentan con los archivos `.h` y `.cpp` de una clase, estos archivos están incompletos ya que les hace falta una serie de lineas críticas para su funcionamiento, su trabajo en este examen será hacer funcionar el archivo `main.cpp` utilizando la documentación disponible, **apuntes y conocimientos previos** para ello deberán:
 
 1. Reparar el archivo de Interfaz `.h`
 2. Reparar el archivo de implementación `.cpp`
