@@ -1,3 +1,0 @@
-D:/Documentos/UNIAT/Clases/Programacion3/Examen/cmake-build-debug/CMakeFiles/Examen.dir
-D:/Documentos/UNIAT/Clases/Programacion3/Examen/cmake-build-debug/CMakeFiles/ALL_BUILD.dir
-D:/Documentos/UNIAT/Clases/Programacion3/Examen/cmake-build-debug/CMakeFiles/ZERO_CHECK.dir
