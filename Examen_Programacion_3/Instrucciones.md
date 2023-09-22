@@ -2,6 +2,8 @@
 
 ## Parte 1
 
+Para la realización de este examen tendrán que Subir en `Classroom`un archivo README.md con las respuestas a las indicaciones, preguntas y calculos que se tengan que hacer en el siguiente examen. Tendrán un lapso de 12 horas a partir de la publicación del espacio correspondiente en classroom.
+
 ### Creación de Clases
 
 En este repositorio de GitHub cuentan con los archivos `.h` y `.cpp` de una clase, estos archivos están incompletos ya que les hace falta una serie de lineas críticas para su funcionamiento, su trabajo en este examen será utilizando la documentación disponible y **apuntes y conocimientos previos**
@@ -11,8 +13,10 @@ En este repositorio de GitHub cuentan con los archivos `.h` y `.cpp` de una clas
 3. Hacer funcionar el archivo `main.cpp`
 4. Responde a las siguientes preguntas:
      1. ¿Qué es un Rvalor y un Lvalor?
-     2. ¿Qué función desarrollan los `::` en la implementación de la clase?
-     3. ¿Cúal es la funcion del archivo `.h`?
+     2. ¿Porqué es necesario que una clase tenga constructores y operadores por **copia** y por **referencia**?
+     3. ¿Qué función desarrollan los `::` en la implementación de la clase?
+     4. ¿Cómo se le denomina a cuando una clase posee un operador puede tener múltiples implementaciones dependiendo de los argumentos que este reciba?
+     5. ¿Cúal es la funcion del archivo `.h`?
 
 ## Parte 2
 
