@@ -26,55 +26,31 @@ Calcular la complejidad temporal en **Big(O) Notation** del siguiente algoritmo:
 
 ```cpp
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
-int binarySearch(const std::vector<int>& vec, int target) {
-    int left = 0;
-    int right = vec.size() - 1;
-    int count = 0;
-
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
-
-        if (vec[mid] == target) {
-            count++;
-            break;  // Se encontró el objetivo, no es necesario buscar más en este subconjunto.
-        } else if (vec[mid] < target) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
+int algoritmo1(int n) {
+    int resultado = 0;
+    
+    for (int i = 0; i < n; i++) {
+        resultado += i; // Operación simple O(1)
+    }
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            resultado += i * j; // Operación simple O(1)
         }
     }
-
-    return count;
-}
-
-void algorithm(int n) {
-    std::vector<int> vec(n);
-
-    for (int i = 0; i < n; ++i) {
-        vec[i] = i;
-    }
-
-    int count = 0;
-    for (int i = 0; i < n; ++i) {
-        for (int j = i; j < n; ++j) {
-            std::sort(vec.begin() + i, vec.begin() + j + 1);
-            count += binarySearch(vec, 42);
-        }
-    }
-
-    std::cout << "El resultado es: " << count << std::endl;
+    
+    return resultado;
 }
 
 int main() {
     int n;
     std::cout << "Ingrese el valor de n: ";
     std::cin >> n;
-
-    algorithm(n);
-
+    
+    int resultado = algoritmo1(n);
+    std::cout << "Resultado: " << resultado << std::endl;
+    
     return 0;
 }
 ```
