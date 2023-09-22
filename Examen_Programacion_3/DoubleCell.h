@@ -4,7 +4,6 @@
 class DoubleCell {
 public:
     // Default constructor
-    DoubleCell();
 
     // Constructor with value
     explicit DoubleCell(double value);
@@ -13,13 +12,11 @@ public:
     DoubleCell(const DoubleCell& other);
 
     //Reference constructor
-    DoubleCell(DoubleCell&& other);
 
     // Destructor
     ~DoubleCell();
 
     // Assignment operator by copy
-    DoubleCell& operator=(const DoubleCell& other);
 
     // Assignment operator by reference
     DoubleCell& operator=(DoubleCell&& other);
@@ -38,11 +35,10 @@ public:
     DoubleCell operator /(const double other) const;
 
     // Setters
-    void SetValue(double value);
 
     // Getters
 
-    [[nodiscard]] double GetValue() const;
+       double GetValue() const;
 
 
 private:
